@@ -1,0 +1,14 @@
+.rodapie{
+    display: flex;
+    flex-direction: column;
+    height: 6rem;
+    text-align: center;
+    justify-content: center;
+}
+
+.rodapie .rodapie__nombres, .rodapie .rodapie__anio{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-text-parrafos);
+}

@@ -1,0 +1,49 @@
+.header{
+    background-color: var(--background-header);
+    width: 100%;
+    box-sizing: border-box;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: .75rem 3rem .75rem 8rem;
+    justify-content: space-between;
+    font-family: 'Raleway', sans-serif;
+    position: fixed;
+    z-index: 100;
+}
+
+.header__titulo{
+    margin: 1rem 1rem 1rem 0rem;
+
+}
+
+.header__titulo i{
+    font-size: 1.5rem;
+} 
+
+.header__titulo a {
+    font-weight: bold;
+}
+
+.header__nav {
+    margin: 1rem 0rem 1rem 1rem;
+    text-align: center;
+    float: left;
+}
+
+.header__nav ul {
+    overflow: hidden;
+}
+
+.header__nav-link{
+    font-size: 1.1rem;
+    display: inline-block;
+    margin:1rem;
+}
+
+.header__nav-link-email{
+    font-size: 1.1rem;
+    display: inline-block;
+    margin: 1rem;
+    font-weight: bold;
+}

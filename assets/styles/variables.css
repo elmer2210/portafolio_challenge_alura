@@ -1,0 +1,24 @@
+:root {
+    /*Sintaxis variable: --nombre-variable:valor*/
+    /*Colores y fondoss*/
+    --color-linea-principal: #464646;
+    --background-principal: #F5F5F5;
+    --background-header: #F5F5F5;
+    --background-container-two: #EAF2FD;
+    --background-skills-hobbies-container: #FFFFFF;
+    --background-formacion-img-container: #FFFFFF;
+    --background-container-form: #EDEDED;
+
+    --color-boton: #2A7AE4;
+    --color-boton-hover: #0d6ae2;
+    /*Textos*/
+    --color-text-titulos: #464646;
+    --color-text-parrafos: #464646;
+    --color-icons-skills-hobbies: #2A7AE4;
+    --color-icons-skills-hobbies-hover: #1070ec;
+    --color-text-boton-color-two:#FFFFFF;
+    --color-text-boton-color-one: #2A7AE4;
+    --color-text-input-color: #2A7AE4;
+    --color-text-formulario: #464646;
+
+}

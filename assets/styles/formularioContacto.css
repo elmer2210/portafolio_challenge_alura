@@ -1,0 +1,128 @@
+.formularioContacto{
+    background-color: var(--background-container-two);
+    margin-top: 1.5rem;
+    padding: 4rem 3rem 4rem 8rem;
+    display: flex;
+}
+
+.formularioContacto__container{
+    width: 35%;
+    background-color: var(--background-container-form);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2rem;
+}
+
+.formularioContacto__titulo{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 2rem;
+    color: var(--color-text-titulos);
+    margin-bottom: 1rem;
+}
+
+.formularioContacto__descripcion{
+    font-family: 'Raleway', sans-serif;
+    font-weight: 500;
+    font-size: 1rem;
+    color: var(--color-text-parrafos);
+    margin-bottom: .25rem;
+}
+
+.formularioContacto__form{
+    display: flex;
+    flex-direction: column;
+    margin-top: 2rem;
+    padding: .5rem .25rem .2rem 1rem;
+    width: 64%;
+}
+
+.formularioContacto__form-inputs {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1rem;
+    justify-content: flex-end;
+    box-sizing: border-box;
+    position: relative;
+    z-index: 1;
+}
+
+.formularioContacto__form-inputs 
+.formularioContacto__form-input{
+    box-sizing: border-box;
+    border-radius: 4px;
+    border: none;
+    padding: 1.375rem 0.5rem 0.5rem;
+    height: 4rem;
+    width: 100%;
+}
+
+.formularioContacto__form-inputs .formularioContacto__form-input:focus, 
+.formularioContacto__form-inputs .formularioContacto__form-text:focus{
+    outline: none;
+    border-bottom: 3px solid var(--color-text-input-color);
+}
+
+.formularioContacto__form-inputs 
+.formularioContacto__form-input::placeholder,
+.formularioContacto__form-inputs .formularioContacto__form-text::placeholder {
+    visibility: hidden;
+  }
+
+.formularioContacto__form-inputs 
+.formularioContacto__form-label{
+    position: absolute;
+    top: 1.375rem;
+    left: 0.5rem;
+    font-size: 1.2rem;
+    transition: all 0.25s;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.formularioContacto__form-inputs .formularioContacto__form-input:not(:placeholder-shown) + .formularioContacto__form-label,
+.formularioContacto__form-input:focus + .formularioContacto__form-label{
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+}
+
+.formularioContacto__form-inputs .formularioContacto__form-text{
+    box-sizing: border-box;
+    border-radius: 7px;
+    border: none;
+    padding: 2rem 0.5rem 0.5rem;
+    min-height: 5rem;
+    width: 100%;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 400;
+    font-size: 1rem;
+}
+
+.formularioContacto__form-inputs .formularioContacto__form-text:not(:placeholder-shown) + .formularioContacto__form-label,
+.formularioContacto__form-text:focus + .formularioContacto__form-label{
+    font-size: 0.875rem;
+    top: 0.25rem;
+    transition: all 0.25s;
+}
+
+.formularioContacto__form button{
+    font-family: 'Raleway';
+    font-weight: 400;
+    font-size: 1rem;
+    border: transparent;
+    padding: 12px 16px;
+    background-color: var(--color-boton);
+    color: var(--color-text-boton-color-two);
+    margin: 32px 0;
+    width: 30%;
+    border-radius: .5rem;
+    transition: .5s;
+}
+
+.formularioContacto__form button:hover{
+    transform: scale(1.1);
+    background-color: var(--color-boton-hover);
+}
