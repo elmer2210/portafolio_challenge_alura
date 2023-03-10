@@ -1,5 +1,6 @@
-.header{
+.header__nav {
     background-color: var(--background-header);
+    border-bottom: .25rem solid var(--color-linea-header);
     width: 100%;
     box-sizing: border-box;
     display: flex;
@@ -8,27 +9,15 @@
     padding: .75rem 3rem .75rem 8rem;
     justify-content: space-between;
     font-family: 'Raleway', sans-serif;
-    position: fixed;
-    z-index: 100;
+    z-index: auto;
 }
 
 .header__titulo{
     margin: 1rem 1rem 1rem 0rem;
-
-}
-
-.header__titulo i{
-    font-size: 1.5rem;
-} 
-
-.header__titulo a {
-    font-weight: bold;
-}
-
-.header__nav {
-    margin: 1rem 0rem 1rem 1rem;
-    text-align: center;
-    float: left;
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 1.5rem;   
+    color: var(--color-text-sin-fondo);
 }
 
 .header__nav ul {
@@ -36,14 +25,33 @@
 }
 
 .header__nav-link{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 500;
     font-size: 1.1rem;
     display: inline-block;
     margin:1rem;
 }
 
-.header__nav-link-email{
-    font-size: 1.1rem;
-    display: inline-block;
-    margin: 1rem;
-    font-weight: bold;
+.header__nav-link a{
+    position: relative;
+    padding-bottom: .625rem;
 }
+
+.header__nav-link a::after{
+    content: "";
+    width: 0;
+    height: .25rem;
+    background: var(--background-color-nav-hover);
+    position: absolute;
+    bottom: 0;
+    right: 50%;
+    transition: all .5s;
+    will-change: width;
+    border-radius: 1rem;
+}
+
+.header__nav-link a:hover::after{
+    width: 100%;
+    right: 0;
+}
+

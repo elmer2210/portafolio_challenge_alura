@@ -1,23 +1,33 @@
 :root {
     /*Sintaxis variable: --nombre-variable:valor*/
     /*Colores y fondoss*/
-    --color-linea-principal: #464646;
-    --background-principal: #F5F5F5;
+    --background-principal: #eeeeee;
     --background-header: #F5F5F5;
     --background-container-two: #EAF2FD;
-    --background-skills-hobbies-container: #FFFFFF;
+    --background-skills-hobbies-container: #f5f5f5;
+    --background-skills-hobbies-container-lista: #FFFFFF;
     --background-formacion-img-container: #FFFFFF;
     --background-container-form: #EDEDED;
+    --background-container-hover: #6E07F3;
+    --background-color-nav-hover:  #6E07F3;
+    --background-container-solido: #6E07F3;
 
-    --color-boton: #2A7AE4;
-    --color-boton-hover: #0d6ae2;
+    --color-boton: #6E07F3;
+    --color-boton-hover: #620ad6;
+    --color-linea-header: #141c3a;
+    /*icons hover*/
+    --color-icon-hover-skills-hobbies: #ffffff;
+    --color-icon-hover-head: #6E07F3;
+    --color-icon-presentacion: #141c3a;
     /*Textos*/
-    --color-text-titulos: #464646;
-    --color-text-parrafos: #464646;
+    --color-text-hover: #ffffff;
+    --color-text-sin-fondo: #141c3a;
+    --color-text-sin-fondo-nombres: #6E07F3;
+    --color-text-parrafos: #141c3a;
+    --color-text-con-fondo: #ffffff;
+    --color-text-sin-fondo: #141c3a;
     --color-icons-skills-hobbies: #2A7AE4;
-    --color-icons-skills-hobbies-hover: #1070ec;
-    --color-text-boton-color-two:#FFFFFF;
-    --color-text-boton-color-one: #2A7AE4;
+    --color-text-con-fondo:#FFFFFF;
     --color-text-input-color: #2A7AE4;
     --color-text-formulario: #464646;
 

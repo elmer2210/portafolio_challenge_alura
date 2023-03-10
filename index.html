@@ -20,40 +20,37 @@
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v6.3.0/css/all.css"  crossorigin="anonymous">
     <title>Portafolio Elmer Rivadeneira</title>
+    <script src="https://unpkg.com/scrollreveal"></script>
 </head>
 <body>
     <main>
-        <header class="header">
+        <nav class="header__nav">
             <h1 class="header__titulo">
-                <i class="far fa-star"></i>
-                <a href="">Elmer Rivadeneira</a>
+                Elmer Rivadeneira
             </h1>
-
-            <nav class="header__nav">
-                <ul>
-                    <li class="header__nav-link"><a href="#">Sobre mi</a></li>
-                    <li class="header__nav-link"><a href="#">Skills</a></li>
-                    <li class="header__nav-link"><a href="#">Hobbies</a></li>
-                    <li class="header__nav-link"><a href="#">Formación</a></li>
-                    <li class="header__nav-link"><a href="#">Proyectos</a></li>
-                    <li class="header__nav-link-email"><a href="mailto:elmerrivadeneira@gmail.com">elmerrivadeneira@gamil.com</a></li>
-                </ul>
-            </nav>
-        </header>
+            <ul>
+                <li class="header__nav-link"><a href="#">Sobre mi</a></li>
+                <li class="header__nav-link"><a href="#">Skills</a></li>
+                <li class="header__nav-link"><a href="#">Hobbies</a></li>
+                <li class="header__nav-link"><a href="#">Formación</a></li>
+                <li class="header__nav-link"><a href="#">Proyectos</a></li>
+                <li class="header__nav-link"><a href="mailto:elmerrivadeneira@gmail.com">elmerrivadeneira@gamil.com</a></li>
+            </ul>
+        </nav>
         <section class="presentacion">
             <div class="presentacion__container-one">
                 <h1 class="presentacion__container-titulo">
-                    Hola, mi nombre es Elmer Rivadeneira y soy Técnico en Desarrollo de Software
+                    Hola, mi nombre es <span>Elmer Rivadeneira</span> y soy Técnico en Desarrollo de Software
                 </h1>
                 <p class="presentacion__container-parrafo">
                     Soy formado como Técnologo en Desarrollo de software y actualmente estoy participando en el proyecto Oracle
                     One Alura Latam.
                 </p>
                 <ul class="presentacion__container-redes">
-                    <li class="presentacion__container-redes-link"><a href="#">Github <i class="fas fa-square-arrow-up-right"></i></a></li>
-                    <li class="presentacion__container-redes-link"><a href="#">Linkedin <i class="fas fa-square-arrow-up-right"></i></a></li>
-                    <li class="presentacion__container-redes-link"><a href="#">Instagram <i class="fas fa-square-arrow-up-right"></i></a></li>
-                    <li class="presentacion__container-redes-link"><a href="#">Curriculum <i class="fas fa-square-arrow-up-right"></i></a></i></li>
+                    <li class="presentacion__container-redes-link"><a href="#"><i class="fa-brands fa-github"></i></i></a></li>
+                    <li class="presentacion__container-redes-link"><a href="#"><i class="fa-brands fa-linkedin"></i></a></li>
+                    <li class="presentacion__container-redes-link"><a href="#"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="presentacion__container-redes-link"><a href="#"><i class="fa-solid fa-file-arrow-down"></i></a></i></li>
                 </ul>
             </div>
             <div class="presentacion__container-two">
@@ -73,34 +70,32 @@
             </p>
         </section>
         <section class="skillsAndHobbies">
-            <div class="skills">
-                <h3 class="skills__titulo">Skills</h3>
-                <ul class="skills__lista">
-                    <li class="skills__lista-item"><i class="fa-brands fa-html5"></i><p>html 5</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-angular"></i><p>angular</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-css3-alt"></i><p>css3</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-bootstrap"></i><p>bootstrap</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-sass"></i><p>sass</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-laravel"></i><p>laravel</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-node"></i><p>node</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-python"></i><p>python</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-js"></i><p>javascript</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-java"></i><p>java</p></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-php"></i><p>php</p></li> 
-                    <li class="skills__lista-item"><i class="fas fa-database"><p>base de datos</p></i></li>
-                    <li class="skills__lista-item"><i class="fa-brands fa-git-alt"></i><p>git versionamiento</p></li>                    
+            <div class="skillsAndHobbies__listas">
+                <h3 class="skillsAndHobbies__titulo">Skills</h3>
+                <ul class="skillsAndHobbies__lista-container">
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-html5"></i><p>html 5</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-angular"></i><p>angular</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-css3-alt"></i><p>css3</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-bootstrap"></i><p>bootstrap</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-sass"></i><p>sass</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-laravel"></i><p>laravel</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-node"></i><p>node</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-python"></i><p>python</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-js"></i><p>javascript</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-java"></i><p>java</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-php"></i><p>php</p></li> 
+                    <li class="skillsAndHobbies__lista-item"><i class="fas fa-database"></i><p>base de datos</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-git-alt"></i><p>git versionamiento</p></li>                    
                 </ul>
-            </div>
-            <div class="hobbies">
-                <h3 class="hobbies__titulo">Hobbies</h3>
-                <ul class="hobbies__lista">
-                    <li class="hobbies__lista-item"><i class="fas fa-headphones"></i><p>escuchar música</p></li>
-                    <li class="hobbies__lista-item"><i class="fas fa-tv"></i><p>ver series y videos</p></li>
-                    <li class="hobbies__lista-item"><i class="fas fa-kitchen-set"></i><p>cocinar</p></li>
-                    <li class="hobbies__lista-item"><i class="fas fa-book-open-reader"></i><p>lectura</p></li>
-                    <li class="hobbies__lista-item"><i class="fa-brands fa-facebook"></i><p>revisar redes sociales</p></li>
-                    <li class="hobbies__lista-item"><i class="fas fa-suitcase-rolling"></i><p>viajar</p></li>
-                    <li class="hobbies__lista-item"><i class="fas fa-paintbrush"></i><p>dibujar</p></li>
+                <h3 class="skillsAndHobbies__titulo">Hobbies</h3>
+                <ul class="skillsAndHobbies__lista-container">
+                    <li class="skillsAndHobbies__lista-item"><i class="fas fa-headphones"></i><p>escuchar música</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fas fa-tv"></i><p>ver series y videos</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fas fa-kitchen-set"></i><p>cocinar</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fas fa-book-open-reader"></i><p>lectura</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-facebook"></i><p>revisar redes sociales</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fas fa-suitcase-rolling"></i><p>viajar</p></li>
+                    <li class="skillsAndHobbies__lista-item"><i class="fas fa-paintbrush"></i><p>dibujar</p></li>
                 </ul>
             </div>
         </section>
@@ -169,9 +164,10 @@
         </section>
         <footer class="rodapie">
             <h1></h1>
-            <p class="rodapie__nombres">Elmer Rivadeneira</p>
-            <p class="rodapie__anio">&copy; copyring 2023</p>
+            <p class="rodapie__nombres">Desarrollado Por Elmer Rivadeneira</p>
+            <p class="rodapie__anio">&copy; copyring 2023, todos los derechos reservados</p>
         </footer>
     </main>
+    <script src="assets/js/animaciones.js"></script>
 </body>
 </html>

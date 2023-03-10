@@ -1,32 +1,40 @@
 .skillsAndHobbies{
-    padding: 2rem 3rem 4rem 8rem;
+    margin-top: -14rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
-.skills, .hobbies{
+.skillsAndHobbies__listas{
     display: flex;
     flex-direction: column;
     margin-bottom: 2rem;
+    padding:2rem;
+    background-color: var(--background-skills-hobbies-container);
+    max-width: 80%;
+    border-radius: 1rem;
+    box-shadow: 0 5px 5px 0 rgb(233 240 243 / 50%), 0 0 0 1px #e6ecf8;
 }
 
-.skills__titulo, .hobbies__titulo{
+.skillsAndHobbies__titulo{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 2rem;
     font-style: normal;
     text-align: center;
-    color: var(--color-text-titulos);
-    margin-bottom: 2rem;
+    color: var(--color-text-sin-fondo);
+    margin: 2rem;
 }   
 
-.skills__lista, .hobbies__lista{
+.skillsAndHobbies__lista-container{
     display: flex;
     flex-wrap: wrap;
 }
 
-.skills__lista-item , .hobbies__lista-item{
-    width: 9.1875rem;
-    height: 9.1875rem;
-    background-color: var(--background-skills-hobbies-container);
+.skillsAndHobbies__lista-item{
+    width: 8.2rem;
+    height: 8.2rem;
+    background-color: var(--background-skills-hobbies-container-lista);
     margin: .25rem 1rem .25rem 0;
     display: flex;
     flex-direction: column;
@@ -34,26 +42,36 @@
     align-items: start;
     padding: 1rem;
     border-radius: 0.25rem;  
+    transition: .5s;
 }
 
-.skills__lista-item i, .hobbies__lista-item i{
+.skillsAndHobbies__lista-item:hover{
+    transform: scale(1.1);
+    background-color: var(--background-container-hover);
+    z-index: 1;
+}
+
+
+
+.skillsAndHobbies__lista-item i{
     top: 5.8rem;
     color: var(--color-icons-skills-hobbies);
     font-size: 3rem;
 }
 
-/*.skills__lista-item:hover , .hobbies__lista-item:hover{
-    color: var(--color-icons-skills-hobbies-hover);
-    font-size: 3.5rem;
-    width: 10rem;
-    height: 10rem;
-}*/
+.skillsAndHobbies__lista-item:hover i{
+    color: var(--color-icon-hover-skills-hobbies);
+}
 
-.skills__lista-item p, .hobbies__lista-item p{
+.skillsAndHobbies__lista-item p{
     font-family: 'Raleway', sans-serif;
     font-weight: 700;
     font-size: 1rem;
     color: var(--color-text-parrafos);
     margin-top: 1rem;
     text-transform: capitalize;
+}
+
+.skillsAndHobbies__lista-item:hover p{
+    color: var(--color-text-hover);
 }
