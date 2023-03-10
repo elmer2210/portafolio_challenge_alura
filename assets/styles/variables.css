@@ -8,12 +8,14 @@
     --background-skills-hobbies-container-lista: #FFFFFF;
     --background-formacion-img-container: #FFFFFF;
     --background-container-form: #EDEDED;
-    --background-container-hover: #6E07F3;
+    --background-container-hover-skills: #141c3a;
     --background-color-nav-hover:  #6E07F3;
     --background-container-solido: #6E07F3;
+    --background-container-solido-form:#141c3a;
 
     --color-boton: #6E07F3;
     --color-boton-hover: #620ad6;
+    --color-boton-form: #141c3a;
     --color-linea-header: #141c3a;
     /*icons hover*/
     --color-icon-hover-skills-hobbies: #ffffff;

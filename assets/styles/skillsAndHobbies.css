@@ -47,7 +47,7 @@
 
 .skillsAndHobbies__lista-item:hover{
     transform: scale(1.1);
-    background-color: var(--background-container-hover);
+    background-color: var( --background-container-hover-skills);
     z-index: 1;
 }
 
