@@ -2,9 +2,8 @@
     background-color: var(--background-principal);
     display: flex;
     flex-direction: row;
-    padding: 4rem 3rem 0rem 8rem;
+    padding: 8rem 3rem 0rem 8rem;
     margin-bottom: 1.5rem;
-    padding: 8rem;
 }
 
 .presentacion__container-one {
