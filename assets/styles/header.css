@@ -85,6 +85,12 @@
     .header__nav-link-email{
         font-size: .875rem;
         font-weight: 400;
+        width: auto;
+    }
+
+    .header__nav{
+        padding: .75rem 2rem .75rem 2rem;
+        margin-right: .5rem;
     }
 }
 
