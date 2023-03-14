@@ -50,3 +50,51 @@
     color: var(--color-text-con-fondo);
     margin-top: .5rem;
 }
+
+/*Tablet*/
+@media screen and (max-width:1180px) {
+    .formacion{
+        padding: 4rem 2rem 4rem 2rem;
+    }
+
+    .formacion__titulo{
+        font-size: 1.375rem;
+    }
+
+    .formacion__item-carrera{
+        font-size: 1rem;
+    }
+
+    .formacion__item-descripcion{
+        font-size: .875rem;
+    }
+
+    .formacion__item-img{
+        width: 20rem;
+    }
+
+    .formacion__item-img img{
+        width: 10rem;
+        height: 6.125rem;
+    }
+}
+
+/*Celulares*/
+@media screen and (max-width: 768px){
+    .formacion__item-img{
+        margin: 0;
+    }
+
+    .formacion_container div{
+        margin-bottom: 1rem;
+    }
+
+    .formacion__item-img{
+        height: 10rem;
+    }
+
+    .formacion__item-img img{
+        width: 8rem;
+        height: 4.125rem;
+    }
+}

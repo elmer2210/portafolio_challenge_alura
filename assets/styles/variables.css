@@ -33,4 +33,8 @@
     --color-text-input-color: #2A7AE4;
     --color-text-formulario: #464646;
 
+    /*Inputs*/
+    --warning-color:#ffffff;
+    --warning-color-border-input:red;
+
 }

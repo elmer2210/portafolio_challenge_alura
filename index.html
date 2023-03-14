@@ -15,6 +15,7 @@
     <link rel="stylesheet" href="assets/styles/experiencia.css">
     <link rel="stylesheet" href="assets/styles/formularioContacto.css">
     <link rel="stylesheet" href="assets/styles/rodapie.css">
+    <link rel="stylesheet" href="assets/styles/errorvalidacion.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@400;500;700&display=swap" rel="stylesheet">
@@ -24,19 +25,23 @@
 </head>
 <body>
     <main>
-        <nav class="header__nav">
-            <h1 class="header__titulo">
-                Elmer Rivadeneira
-            </h1>
-            <ul>
-                <li class="header__nav-link"><a href="#">Sobre mi</a></li>
-                <li class="header__nav-link"><a href="#">Skills</a></li>
-                <li class="header__nav-link"><a href="#">Hobbies</a></li>
-                <li class="header__nav-link"><a href="#">Formación</a></li>
-                <li class="header__nav-link"><a href="#">Proyectos</a></li>
-                <li class="header__nav-link"><a href="mailto:elmerrivadeneira@gmail.com">elmerrivadeneira@gamil.com</a></li>
-            </ul>
-        </nav>
+        <section class="header">
+            <nav class="header__nav">
+                <h1 class="header__titulo">
+                    Elmer Rivadeneira
+                </h1>
+                <ul>
+                    <li class="header__nav-link"><a href="#sobre_mi">Sobre mi</a></li>
+                    <li class="header__nav-link"><a href="#skills">Skills</a></li>
+                    <li class="header__nav-link"><a href="#hobbies">Hobbies</a></li>
+                    <li class="header__nav-link"><a href="#formacionac">Formación</a></li>
+                    <li class="header__nav-link"><a href="#experiencia">Proyectos</a></li>
+                    <!--li class="header__nav-link"><a href="#contacto">Contacto</a></li-->
+                    <li class="header__nav-link-email"><a href="mailto:elmerrivadeneira@gmail.com">elmerrivadeneira@gamil.com</a></li>
+                </ul>
+            </nav>
+        </section>
+        
         <section class="presentacion">
             <div class="presentacion__container-one">
                 <h1 class="presentacion__container-titulo">
@@ -49,28 +54,29 @@
                 <ul class="presentacion__container-redes">
                     <li class="presentacion__container-redes-link"><a href="https://github.com/elmer2210" target="_blank"><i class="fa-brands fa-github"></i></i></a></li>
                     <li class="presentacion__container-redes-link"><a href="https://www.linkedin.com/in/elmer-rivadeneira" target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
-                    <li class="presentacion__container-redes-link"><a href="#" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
-                    <li class="presentacion__container-redes-link"><a href="#" target="_blank"><i class="fa-solid fa-file-arrow-down"></i></a></i></li>
+                    <li class="presentacion__container-redes-link"><a href="" target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                    <li class="presentacion__container-redes-link"><a href="https://drive.google.com/file/d/1UOmyavaWGk2Az8FNFp1hBPI_U_YNl3M0/view?usp=sharing" target="_blank"><i class="fa-solid fa-file-arrow-down"></i></a></i></li>
                 </ul>
             </div>
             <div class="presentacion__container-two">
                 <img src="assets/images/perfil.enc" alt="Perfil Elmer Rivadeneira" class="presentacion__container-img">
             </div>
         </section>
-        <section class="acercaDeMi">
+        <section class="acercaDeMi" id="sobre_mi">
             <h1 class="acercaDeMi__titulo">Sobre mi</h1>
             <p class="acercaDeMi__parrafo">
-                Tecnologo en Desarrollo de Software, graduado el 2022 en el Instituto Tecnológico Superior Yavirac, cuento con habilidades
-                como programador junio full stack en diferentes tecnologías, como: Angular, Laravel, Odoo, .Net, Ionic, Redes y conectividad.
-                Además he adquirido un certificado en manejo de aplicaciones Adobe como Illustrator.
+                Tecnólogo en Desarrollo de Software, graduado el 2022 en el Instituto Tecnológico Superior Yavirac, 
+                cuento con habilidades como programador junio full stack en diferentes tecnologías, como: Angular, 
+                Laravel, Odoo, .Net, Ionic, Redes y conectividad. Además he adquirido un certificado en manejo de 
+                aplicaciones Adobe como Illustrator.
             </p>
             <p class="acercaDeMi__parrafo">
-                Soy un persona carísmática, me gusta aprender y ayudar a los demás. Actualmente me estoy especializando como Desarrollador 
-                Fron-End con Alura Latan, ya que es la especialidad que más me gusta como programador. Estoy preparado para asumir retos 
-                nuevos en mi vida profesional.
+                Soy una persona carismática, me gusta aprender y ayudar a los demás. Actualmente me estoy especializando 
+                como Desarrollador Fron-End con Alura Latan, ya que es la especialidad que más me gusta como programador. 
+                Estoy preparado para asumir retos nuevos en mi vida profesional.
             </p>
         </section>
-        <section class="skillsAndHobbies">
+        <section class="skillsAndHobbies" id="skills">
             <div class="skillsAndHobbies__listas">
                 <h3 class="skillsAndHobbies__titulo">Skills</h3>
                 <ul class="skillsAndHobbies__lista-container">
@@ -87,9 +93,9 @@
                     <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-java"></i><p>java</p></li>
                     <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-php"></i><p>php</p></li> 
                     <li class="skillsAndHobbies__lista-item"><i class="fas fa-database"></i><p>base de datos</p></li>
-                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-git-alt"></i><p>git versionamiento</p></li>                    
+                    <li class="skillsAndHobbies__lista-item"><i class="fa-brands fa-git-alt"></i><p>git</p></li>                    
                 </ul>
-                <h3 class="skillsAndHobbies__titulo">Hobbies</h3>
+                <h3 class="skillsAndHobbies__titulo" id="hobbies">Hobbies</h3>
                 <ul class="skillsAndHobbies__lista-container">
                     <li class="skillsAndHobbies__lista-item"><i class="fas fa-headphones"></i><p>escuchar música</p></li>
                     <li class="skillsAndHobbies__lista-item"><i class="fas fa-tv"></i><p>ver series y videos</p></li>
@@ -101,7 +107,7 @@
                 </ul>
             </div>
         </section>
-        <section class="formacion">
+        <section class="formacion" id="formacionac">
             <h3 class="formacion__titulo">Formación acadmémica</h3>
             <div class="formacion_container">
                 <div>
@@ -120,48 +126,68 @@
                 </div>
             </div>
         </section>
-        <section class="experiencia">
+        <section class="experiencia" id="experiencia">
             <h3 class="experiencia__titulo">Experiencia profesional</h3>
             <article class="experiencia__container">
                 <span class="experiencia__container-img">
-                    <img src="" alt="">
+                    <img src="assets/images/127.0.0.1_5500_index.html.png" alt="Barberia Alura">
                 </span>
                 <div class="experiencia__container-text">
-                    <h4 class="experiencia__container-text-titulo">Nombre del proyecto web</h4>
-                    <p class="experiencia__container-text-descripcion">Descripcion del proyecto</p>
+                    <h4 class="experiencia__container-text-titulo">Barbería Alura</h4>
+                    <p class="experiencia__container-text-descripcion">Proyecto creado en la primera etapa de preparación en Alura Latam</p>
                     <span class="experiencia__containertext-botones">
-                        <a href="" class="experiencia__containertext-botones-link-one">Repositorio</a>
-                        <a href="" class="experiencia__containertext-botones-link-two">Ver demo</a>
+                        <a href="https://github.com/elmer2210/barberia_alura" class="experiencia__containertext-botones-link-one" target="_blank">Repositorio</a>
+                        <a href="https://elmer2210.github.io/barberia_alura/" class="experiencia__containertext-botones-link-two" target="_blank">Ver demo</a>
+                    </span>
+                </div>
+            </article>
+            <article class="experiencia__container">
+                <span class="experiencia__container-img">
+                    <img src="assets/images/127.0.0.1_5501_apeperia.png" alt="Imagen apeperia">
+                </span>
+                <div class="experiencia__container-text">
+                    <h4 class="experiencia__container-text-titulo">Apeperia Alura</h4>
+                    <p class="experiencia__container-text-descripcion">Proyecto en la clase de páginas responsivas</p>
+                    <span class="experiencia__containertext-botones">
+                        <a href="https://github.com/elmer2210/barberia_alura" class="experiencia__containertext-botones-link-one" target="_blank">Repositorio</a>
+                        <a href="https://elmer2210.github.io/barberia_alura/" class="experiencia__containertext-botones-link-two" target="_blank">Ver demo</a>
                     </span>
                 </div>
             </article>
         </section>
-        <section class="formularioContacto">
+        <section class="formularioContacto" id="contacto">
             <div class="formularioContacto__container">
                 <h1 class="formularioContacto__titulo">Contacto</h1>
                 <p class="formularioContacto__descripcion">¿Quieres contactarme?</p>
                 <p class="formularioContacto__descripcion">Completa el siguiente formulario y me pondré en contacto con su persona lo antes posible</p>
             </div>
-            <form action="" class="formularioContacto__form">
+            <form action="https://formsubmit.co/elmerrivadeneira@gmail.com" class="formularioContacto__form" name="form"  method="POST">
                 <fieldset>
                     <div class="formularioContacto__form-inputs">
-                        <input type="text" name="nombres" id="" class="formularioContacto__form-input" placeholder="Nombres">
+                        <input type="text" name="name" id="" class="formularioContacto__form-input" placeholder="Nombres" required data-tipo="nombres" >
                         <label for="" class="formularioContacto__form-label">Nombres</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="formularioContacto__form-inputs">
-                        <input type="email" name="email" id="" class="formularioContacto__form-input" placeholder="Correo electrónico">
+                        <input type="email" name="email" id="" class="formularioContacto__form-input" placeholder="Correo electrónico" required data-tipo="email">
                         <label for="" class="formularioContacto__form-label">Correo electrónico</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="formularioContacto__form-inputs">
-                        <input type="text" name="asunto" id="" class="formularioContacto__form-input" placeholder="Asunto">
+                        <input type="text" name="subject" id="" class="formularioContacto__form-input" placeholder="Asunto" required data-tipo="asunto">
                         <label for="" class="formularioContacto__form-label">Asunto</label>
+                        <span class="input-message-error"></span>
                     </div>
                     <div class="formularioContacto__form-inputs">
-                        <textarea name="mensaje" id="8" cols="30" rows="10" class="formularioContacto__form-text" placeholder="Mensaje"></textarea>
+                        <textarea name="comments" id="mensage" cols="30" rows="10" class="formularioContacto__form-text" placeholder="Mensaje" required data-tipo="mensaje"></textarea>
                         <label for="" class="formularioContacto__form-label">Mensaje</label>
+                        <span class="input-message-error"></span>
                     </div>
                 </fieldset>
                 <button type="submit">Contactar</button>
+                <input type="hidden" name="_next" value="https://elmer2210.github.io/portafolio_challenge_alura/">
+                <input type="hidden" name="_captcha" value="false">
+                <input type="hidden" name="_template" value="table">
             </form>
         </section>
         <footer class="rodapie">
@@ -171,5 +197,6 @@
         </footer>
     </main>
     <script src="assets/js/animaciones.js"></script>
+    <script src="assets/js/app.js" type="module"></script>
 </body>
 </html>

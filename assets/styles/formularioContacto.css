@@ -12,6 +12,7 @@
     flex-direction: column;
     justify-content: center;
     padding: 2rem;
+    border-radius: 3rem;
 }
 
 .formularioContacto__titulo{
@@ -126,4 +127,53 @@
 .formularioContacto__form button:hover{
     transform: scale(1.1);
     background-color: var(--color-boton-form);
+}
+
+/*Tablet*/
+@media screen and (max-width: 1180px){
+    .formularioContacto{
+        flex-direction: column;
+        padding: 4rem 2rem 4rem 2rem;
+    }
+
+    .formularioContacto__container{
+        width: auto;
+        position: relative;
+        background-color: transparent;
+    }
+
+    .formularioContacto__titulo{
+       color: var(--color-text-con-fondo);
+       font-size: 1.375rem;
+    }
+
+    .formularioContacto__descripcion{
+        font-size: .875rem;
+        color: var(--color-text-con-fondo);
+    }
+
+    .formularioContacto__form{
+        width: auto;
+    }
+}
+
+/*Celular*/
+@media screen and (max-width: 768px) {
+    .formularioContacto{
+        margin: 0;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    .formularioContacto__container{
+        margin: 0;
+        padding: 1rem;
+    }
+
+    .formularioContacto__form{
+        margin: 0;
+    }
+
+    .formularioContacto__form button{
+        width: 100%;
+        margin: 0;
+    }
 }

@@ -9,7 +9,8 @@
     padding: .75rem 3rem .75rem 8rem;
     justify-content: space-between;
     font-family: 'Raleway', sans-serif;
-    z-index: auto;
+    z-index: 1;
+    position: fixed;
 }
 
 .header__titulo{
@@ -32,12 +33,20 @@
     margin:1rem;
 }
 
-.header__nav-link a{
+.header__nav-link-email{
+    font-family: 'Raleway',sans-serif;
+    font-weight: 700;
+    font-size: 1.1rem;
+    display: inline-block;
+    margin:1rem;
+}
+
+.header__nav-link a, .header__nav-link-email a{
     position: relative;
     padding-bottom: .625rem;
 }
 
-.header__nav-link a::after{
+.header__nav-link a::after, .header__nav-link-email a::after{
     content: "";
     width: 0;
     height: .25rem;
@@ -50,8 +59,32 @@
     border-radius: 1rem;
 }
 
-.header__nav-link a:hover::after{
+.header__nav-link a:hover::after, .header__nav-link-email:hover::after{
     width: 100%;
     right: 0;
+}
+
+/*Tablet*/
+@media screen and (max-width: 1180px){
+    .header__nav {
+        padding: .75rem 3rem .75rem 2rem;
+    }
+    .header__nav-link{
+        display: none;
+    }
+    .header__titulo{
+        font-size: 1rem;
+    }
+}
+
+/*Celulares*/
+@media screen and (max-width: 768px){
+    .header__titulo{
+        margin: 0;
+    }
+    .header__nav-link-email{
+        font-size: .875rem;
+        font-weight: 400;
+    }
 }
 

@@ -2,7 +2,7 @@
     background-color: var(--background-principal);
     display: flex;
     flex-direction: row;
-    padding: 5rem 8rem;
+    padding: 8rem 8rem;
 }
 
 .presentacion__container-one {
@@ -25,7 +25,6 @@
     font-family: 'Raleway',sans-serif;
     font-weight: 700;
     font-size: 3.30rem;
-    padding-right: 1.5rem;
     margin-bottom: 1.5rem;
 }
 
@@ -84,4 +83,67 @@
     max-height: 22.125rem;
     border-radius: 100%;
     box-shadow: 0 0 1.5rem rgb(110, 7, 243, .5);
+}
+
+@media screen and (max-width: 1180px){
+
+    .presentacion{
+        padding: 8rem 2rem 3rem 2rem;
+    }
+
+    .presentacion__container-titulo{
+        font-size: 1.375rem;
+    } 
+
+    .presentacion__container-titulo span{
+        font-size: 1.375rem;
+    }
+
+    .presentacion__container-two img{
+        width: 15rem;
+        max-height: 15rem;
+    }
+
+    .presentacion__container-parrafo{
+        font-size: 1rem;
+    }
+
+    .presentacion__container-redes 
+    .presentacion__container-redes-link i{
+        font-size: 2rem;   
+    }
+}
+
+/*Celulares*/
+@media screen and (max-width: 768px) {
+    .presentacion{
+        flex-direction: column-reverse;
+        padding: 8rem 2rem 0 2rem;
+    }
+    
+    .presentacion__container-two img{
+        width: 8rem;
+        max-height: 8rem;
+    }
+
+    .presentacion__container-parrafo{
+        font-size: .875rem;
+        padding: 0;
+        margin-bottom: 1rem;
+    }
+
+    .presentacion__container-redes{
+        padding: 0;
+        margin: 0;
+    }
+
+    .presentacion__container-redes
+    .presentacion__container-redes-link{
+        margin: 0rem;
+    }
+
+    .presentacion__container-redes 
+    .presentacion__container-redes-link i{
+        font-size: 1.5rem;   
+    }
 }

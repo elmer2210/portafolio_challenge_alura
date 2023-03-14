@@ -8,7 +8,7 @@
     font-weight: 700;
     font-size: 2rem;
     color: var(--color-text-sin-fondo);
-    margin-bottom: 1rem;
+    margin-bottom: 2rem;
     text-align: center;
 }
 
@@ -16,13 +16,28 @@
    width: 100%;
    display: flex;
    flex-direction: row;
+   row-gap: 1rem;
+   margin-bottom: 2.5rem;
 }
 
 .experiencia__container-img { 
     width: 65%;
     height: 23.75rem;
     background-color: var(--background-formacion-img-container);
+    overflow: hidden;
+    transition: all 5s ease;
 }
+
+.experiencia__container-img img{
+    width: 100%;
+    transform: 0;
+    transition: 5s ;
+}
+
+.experiencia__container-img img:hover{
+    transform: translateY(calc(-100% + 15rem));
+}
+
 
 .experiencia__container-text {
     display: flex;
@@ -60,6 +75,13 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    transition: .5s;
+}
+
+.experiencia__containertext-botones-link-one:hover{
+    transform: scale(1.1);
+    border-top-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
 }
 
 .experiencia__containertext-botones-link-two {
@@ -69,5 +91,78 @@
     font-family: 'Raleway', sans-serif;
     font-weight: 500;
     font-size: 1rem;
+    transition: .5s;
+}
+
+.experiencia__containertext-botones-link-two:hover{
+    transform: scale(1.1);
+    border-top-left-radius: .5rem;
+    border-bottom-right-radius: .5rem;
+}
+
+/*computadoras*/
+@media screen and (min-width: 1180px) {
+    .experiencia__container:nth-child(odd) {
+        flex-direction: row-reverse;
+      }
+}
+
+/*Tablet*/
+@media screen and (max-width: 1180px){
+    .experiencia{
+        padding: 4rem 2rem 4rem 2rem;
+    }
+
+    .experiencia__titulo{
+        font-size: 1.375rem;
+    }
+
+    .experiencia__container{
+        flex-direction: column;
+    }
+
+    .experiencia__container-img{
+        width: 100%;
+    }
+
+    .experiencia__container-img img{
+        width: 100%;
+    }
+    
+    .experiencia__container-text{
+        width: 50%;
+    }
+
+    .experiencia__containertext-botones{
+        justify-content: start;
+    }
+
+    .experiencia__containertext-botones-link-one{
+        margin-right: 5rem;
+    }
+}
+
+/*Celulares*/
+@media screen and (max-width: 768px) {
+    .experiencia{
+        margin: 0;
+        padding: 1rem 2rem 1rem 2rem;
+    }
+    
+    .experiencia__container-img{
+        height: 144px;
+    }
+
+    .experiencia__container-text{
+        width: 100%;
+    }
+
+    .experiencia__containertext-botones{
+        justify-content: space-between;
+    }
+
+    .experiencia__containertext-botones-link-one{
+        margin-right: 0;
+    }
 }
 

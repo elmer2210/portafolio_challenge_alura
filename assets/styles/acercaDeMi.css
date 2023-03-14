@@ -25,3 +25,30 @@
     margin-top: 1rem;
     width: 60%;
 }
+
+/*Tablet*/
+@media screen and (max-width: 1180px) {
+    .acercaDeMi{
+        padding: 7rem 2rem 20rem 2rem;
+    } 
+
+    .acercaDeMi__titulo{
+        font-size: 1.375rem;
+    }
+
+    .acercaDeMi__parrafo{
+        font-size: .875rem;
+        width: 80%;
+    }
+}
+
+/*Celulares*/
+@media screen and (max-width: 768px){
+    .acercaDeMi{
+        padding: 3rem 2rem 3rem 2rem;
+    } 
+    .acercaDeMi__parrafo{
+        text-align: left;
+        width: 100%;
+    }
+}

@@ -13,3 +13,16 @@
     color: var(--color-text-parrafos);
     margin-bottom: .25rem;
 }
+
+/*Celulares*/
+@media screen and (max-width: 768px) {
+    .rodapie{
+        align-items: center;
+        padding: 1rem;
+    }
+    .rodapie .rodapie__nombres, .rodapie__anio{
+        text-align: center;
+        width: 70%;
+        margin-bottom: 1rem;
+    }
+}
