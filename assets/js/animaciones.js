@@ -1,6 +1,6 @@
 window.sr = ScrollReveal();
 
-sr.reveal('.acercaDeMi__titulo, .skillsAndHobbies__titulo, .formacion__titulo, .experiencia__titulo, .experiencia__container',
+sr.reveal('.acercaDeMi__titulo, .skillsAndHobbies__titulo, .formacion__titulo, .experiencia__titulo, .experiencia__container, .formularioContacto__form',
 {
     duration: 3000,
 });
@@ -13,7 +13,7 @@ sr.reveal('.presentacion__container-one, .experiencia__container-img, .formulari
     distance: '100px'
 });
 
-sr.reveal('.presentacion__container-two img, .formularioContacto__form',
+sr.reveal('.presentacion__container-two img',
 {
     duration: 3000,
     origin: 'rigth',
